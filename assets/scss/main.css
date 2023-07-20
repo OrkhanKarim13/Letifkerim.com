@@ -247,6 +247,105 @@
   z-index: 1000;
 }
 
+.gallery {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.gallery .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .container .workCards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+.gallery .container .workCards .workCard {
+  width: 512px;
+}
+.gallery .container .workCards .workCard .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard .cardImage img {
+  width: 512px;
+  height: 620px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard .cardInfo {
+  padding-top: 10px;
+  max-width: 500px;
+}
+.gallery .container .workCards .workCard .cardInfo .cardTitle {
+  font-size: 26px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.gallery .container .workCards .workCard .cardInfo .cardText {
+  padding-top: 10px;
+  color: #2e3036;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+}
+.gallery .container .workCards .workCard:nth-child(1) {
+  padding-top: 80px;
+}
+.gallery .container .workCards .workCard:nth-child(1) .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard:nth-child(1) .cardImage img {
+  width: 512px;
+  height: 620px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard:nth-child(1) .cardInfo {
+  max-width: 500px;
+}
+.gallery .container .workCards .workCard:nth-child(2) .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard:nth-child(2) .cardImage img {
+  width: 512px;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard:nth-child(2) .cardInfo {
+  max-width: 500px;
+}
+.gallery .container .workCards .workCard:nth-child(3) .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard:nth-child(3) .cardImage img {
+  width: 512px;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard:nth-child(3) .cardInfo {
+  max-width: 500px;
+}
+.gallery .container .workCards .workCard:nth-child(4) .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard:nth-child(4) .cardImage img {
+  width: 512px;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard:nth-child(4) .cardInfo {
+  max-width: 500px;
+}
+
 @media (max-width: 1180px) {
   .home {
     width: 100%;

@@ -105,6 +105,106 @@
   }
 }
 
+.gallery {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .workCards {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 80px;
+      .workCard {
+        width: 512px;
+        .cardImage {
+          width: 100%;
+          img {
+            width: 512px;
+            height: 620px;
+            object-fit: cover;
+          }
+        }
+        .cardInfo {
+          padding-top: 10px;
+          max-width: 500px;
+          .cardTitle {
+            font-size: 26px;
+            font-family: "Space Grotesk", sans-serif;
+          }
+          .cardText {
+            padding-top: 10px;
+            color: #2e3036;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 200%;
+          }
+        }
+      }
+    }
+    .workCards .workCard:nth-child(1) {
+      padding-top: 80px;
+      .cardImage {
+        width: 100%;
+        img {
+          width: 512px;
+          height: 620px;
+          object-fit: cover;
+        }
+      }
+      .cardInfo {
+        max-width: 500px;
+      }
+    }
+    .workCards .workCard:nth-child(2) {
+      .cardImage {
+        width: 100%;
+        img {
+          width: 512px;
+          height: 580px;
+          object-fit: cover;
+        }
+      }
+      .cardInfo {
+        max-width: 500px;
+      }
+    }
+    .workCards .workCard:nth-child(3) {
+      .cardImage {
+        width: 100%;
+        img {
+          width: 512px;
+          height: 550px;
+          object-fit: cover;
+        }
+      }
+      .cardInfo {
+        max-width: 500px;
+      }
+    }
+    .workCards .workCard:nth-child(4) {
+      .cardImage {
+        width: 100%;
+        img {
+          width: 512px;
+          height: 650px;
+          object-fit: cover;
+        }
+      }
+      .cardInfo {
+        max-width: 500px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1180px) {
   .home {
     width: 100%;

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
     <meta charset="UTF-8" />
     <meta name="description" content="UX/UI Designer" />
     <meta property="og:title" content="UX/UI" />
@@ -99,12 +103,73 @@
               >
             </li>
             <li class="navItem">
-              <a href="#" target="_blank">Resume</a>
+              <a href="https://letifkerim.com/cv.pdf">Resume</a>
             </li>
           </ul>
         </div>
       </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="workCards">
+            <div class="workCard scroll1">
+              <div class="cardImage">
+                <img src="./assets/images/Cover-Insight-min.png" alt="card" />
+              </div>
+              <div class="cardInfo">
+                <h4 class="cardTitle">Letif Kerim</h4>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  amet veniam eligendi unde maiores itaque facilis voluptas
+                </p>
+              </div>
+            </div>
+            <div class="workCard scroll2">
+              <div class="cardImage">
+                <img
+                  src="./assets/images/Cover-Friendly-min-1-1.png"
+                  alt="card"
+                />
+              </div>
+              <div class="cardInfo">
+                <h4 class="cardTitle">Letif Kerim</h4>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  amet veniam eligendi unde maiores itaque facilis voluptas
+                </p>
+              </div>
+            </div>
+            <div class="workCard scroll1">
+              <div class="cardImage">
+                <img src="./assets/images/Cover-Blys-min.png" alt="card" />
+              </div>
+              <div class="cardInfo">
+                <h4 class="cardTitle">Letif Kerim</h4>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  amet veniam eligendi unde maiores itaque facilis voluptas
+                </p>
+              </div>
+            </div>
+            <div class="workCard scroll2">
+              <div class="cardImage">
+                <img src="./assets/images/Cover-Insight-min.png" alt="card" />
+              </div>
+              <div class="cardInfo">
+                <h4 class="cardTitle">Letif Kerim</h4>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  amet veniam eligendi unde maiores itaque facilis voluptas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- End Home Section -->
     </main>
+    <script>
+      ScrollReveal().reveal(".scroll1", { delay: 200 });
+      ScrollReveal().reveal(".scroll2", { delay: 400 });
+    </script>
   </body>
 </html>
