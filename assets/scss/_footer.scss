@@ -56,10 +56,112 @@
           text-transform: uppercase;
           font-family: "Space Grotesk", sans-serif;
           transition: 0.5s ease;
-          &:hover{
+          &:hover {
             background-color: #000;
             color: #fff;
             transition: 0.5s ease;
+          }
+        }
+      }
+    }
+    .footerBottom {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      .leftside {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .coffee {
+          .coffeeText {
+            color: #2e3036;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 100%;
+          }
+        }
+        .gmailAdd{
+          a{
+            color: #2e3036;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 100%;
+            position: relative;
+            transition: transform 0.6s linear;
+            &:before{
+              content: "";
+              position: absolute;
+              bottom: -3px;
+              left: 0;
+              height: 1px;
+              width: 100%;
+              background: #000;
+              border-radius: 25px;
+              transform: scaleX(0);
+              transition: transform 0.6s linear;
+              transform-origin: right;
+            }
+            &:hover:before{
+              transform: scaleX(1);
+              transform-origin: left;
+            }
+          }
+        }
+      }
+      .rightSide {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .connect {
+          .rigtTitle{
+            color: #2e3036;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 100%;
+          }
+        }
+        .socialList {
+          display: flex;
+          gap: 10px;
+          .socialProfile {
+            a {
+              color: #2e3036;
+              font-family: "DM Sans";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 28px;
+              line-height: 100%;
+              transition: transform 0.6s linear;
+              position: relative;
+              &:before{
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background: #000;
+                border-radius: 25px;
+                transform: scaleX(0);
+                transition: transform 0.6s linear;
+                transform-origin: right;
+              }
+              &:hover:before{
+                transform: scaleX(1);
+                transform-origin: left;
+              }
+            }
+            
           }
         }
       }
