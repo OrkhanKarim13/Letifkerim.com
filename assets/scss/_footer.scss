@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   background-color: #fff;
+  padding: 50px 0;
   .container {
     width: 80%;
     margin: 0 auto;
@@ -67,6 +68,7 @@
     .footerBottom {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       padding-top: 100px;
@@ -85,8 +87,8 @@
             line-height: 100%;
           }
         }
-        .gmailAdd{
-          a{
+        .gmailAdd {
+          a {
             color: #2e3036;
             font-family: "DM Sans";
             font-style: normal;
@@ -95,7 +97,7 @@
             line-height: 100%;
             position: relative;
             transition: transform 0.6s linear;
-            &:before{
+            &:before {
               content: "";
               position: absolute;
               bottom: -3px;
@@ -108,7 +110,7 @@
               transition: transform 0.6s linear;
               transform-origin: right;
             }
-            &:hover:before{
+            &:hover:before {
               transform: scaleX(1);
               transform-origin: left;
             }
@@ -121,7 +123,7 @@
         flex-direction: column;
         gap: 30px;
         .connect {
-          .rigtTitle{
+          .rigtTitle {
             color: #2e3036;
             font-family: "DM Sans";
             font-style: normal;
@@ -143,7 +145,7 @@
               line-height: 100%;
               transition: transform 0.6s linear;
               position: relative;
-              &:before{
+              &:before {
                 content: "";
                 position: absolute;
                 bottom: -3px;
@@ -156,14 +158,25 @@
                 transition: transform 0.6s linear;
                 transform-origin: right;
               }
-              &:hover:before{
+              &:hover:before {
                 transform: scaleX(1);
                 transform-origin: left;
               }
             }
-            
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .footer{
+    .container{
+      .footerBottom{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   }

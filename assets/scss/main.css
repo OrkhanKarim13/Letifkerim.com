@@ -232,6 +232,7 @@
   padding: 24px 26px;
   background-color: #d3d3d3;
   position: absolute;
+  z-index: 1000;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -245,105 +246,6 @@
   font-size: 16px;
   line-height: 100%;
   z-index: 1000;
-}
-
-.gallery {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-}
-.gallery .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.gallery .container .workCards {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 80px;
-}
-.gallery .container .workCards .workCard {
-  width: 512px;
-}
-.gallery .container .workCards .workCard .cardImage {
-  width: 100%;
-}
-.gallery .container .workCards .workCard .cardImage img {
-  width: 512px;
-  height: 620px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.gallery .container .workCards .workCard .cardInfo {
-  padding-top: 10px;
-  max-width: 500px;
-}
-.gallery .container .workCards .workCard .cardInfo .cardTitle {
-  font-size: 26px;
-  font-family: "Space Grotesk", sans-serif;
-}
-.gallery .container .workCards .workCard .cardInfo .cardText {
-  padding-top: 10px;
-  color: #2e3036;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 200%;
-}
-.gallery .container .workCards .workCard:nth-child(1) {
-  padding-top: 80px;
-}
-.gallery .container .workCards .workCard:nth-child(1) .cardImage {
-  width: 100%;
-}
-.gallery .container .workCards .workCard:nth-child(1) .cardImage img {
-  width: 512px;
-  height: 620px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.gallery .container .workCards .workCard:nth-child(1) .cardInfo {
-  max-width: 500px;
-}
-.gallery .container .workCards .workCard:nth-child(2) .cardImage {
-  width: 100%;
-}
-.gallery .container .workCards .workCard:nth-child(2) .cardImage img {
-  width: 512px;
-  height: 580px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.gallery .container .workCards .workCard:nth-child(2) .cardInfo {
-  max-width: 500px;
-}
-.gallery .container .workCards .workCard:nth-child(3) .cardImage {
-  width: 100%;
-}
-.gallery .container .workCards .workCard:nth-child(3) .cardImage img {
-  width: 512px;
-  height: 550px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.gallery .container .workCards .workCard:nth-child(3) .cardInfo {
-  max-width: 500px;
-}
-.gallery .container .workCards .workCard:nth-child(4) .cardImage {
-  width: 100%;
-}
-.gallery .container .workCards .workCard:nth-child(4) .cardImage img {
-  width: 512px;
-  height: 650px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.gallery .container .workCards .workCard:nth-child(4) .cardInfo {
-  max-width: 500px;
 }
 
 @media (max-width: 1180px) {
@@ -569,8 +471,9 @@
     justify-content: space-around;
     padding: 24px 20px;
     background-image: linear-gradient(315deg, #d7f0f0 74% #fcfafa 10%);
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    right: 0;
     margin-bottom: 10px;
     width: 100%;
     height: 64px;
@@ -593,6 +496,7 @@
 .footer {
   width: 100%;
   background-color: #fff;
+  padding: 50px 0;
 }
 .footer .container {
   width: 80%;
@@ -661,6 +565,7 @@
 .footer .container .footerBottom {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
@@ -750,4 +655,142 @@
 .footer .container .footerBottom .rightSide .socialList .socialProfile a:hover:before {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+@media (max-width: 998px) {
+  .footer .container .footerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.gallery {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.gallery .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .container .workCards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+.gallery .container .workCards .workCard {
+  width: 512px;
+}
+.gallery .container .workCards .workCard .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard .cardImage img {
+  width: 512px;
+  height: 620px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard .cardInfo {
+  padding-top: 10px;
+  max-width: 500px;
+}
+.gallery .container .workCards .workCard .cardInfo .cardTitle {
+  font-size: 26px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.gallery .container .workCards .workCard .cardInfo .cardText {
+  padding-top: 10px;
+  color: #2e3036;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+}
+.gallery .container .workCards .workCard:nth-child(1) {
+  padding-top: 80px;
+}
+.gallery .container .workCards .workCard:nth-child(1) .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard:nth-child(1) .cardImage img {
+  width: 512px;
+  height: 620px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard:nth-child(1) .cardInfo {
+  max-width: 500px;
+}
+.gallery .container .workCards .workCard:nth-child(2) .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard:nth-child(2) .cardImage img {
+  width: 512px;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard:nth-child(2) .cardInfo {
+  max-width: 500px;
+}
+.gallery .container .workCards .workCard:nth-child(3) .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard:nth-child(3) .cardImage img {
+  width: 512px;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard:nth-child(3) .cardInfo {
+  max-width: 500px;
+}
+.gallery .container .workCards .workCard:nth-child(4) .cardImage {
+  width: 100%;
+}
+.gallery .container .workCards .workCard:nth-child(4) .cardImage img {
+  width: 512px;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .container .workCards .workCard:nth-child(4) .cardInfo {
+  max-width: 500px;
+}
+
+@media (max-width: 612px) {
+  .gallery {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .gallery .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery .container .workCards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .gallery .container .workCards .workCard {
+    width: 300px;
+  }
+  .gallery .container .workCards .workCard .cardImage {
+    width: 50%;
+  }
+  .gallery .container .workCards .workCard .cardImage img {
+    width: 300px !important;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=main.css.map */
