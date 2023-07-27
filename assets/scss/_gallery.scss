@@ -37,7 +37,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 200%;
+            line-height: 150%;
           }
         }
       }
@@ -107,6 +107,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 36px 16px 36px 16px;
       .workCards {
         width: 100%;
         display: flex;
@@ -114,13 +115,12 @@
         justify-content: center;
         flex-direction: column;
         .workCard {
-          width: 300px;
+          width: 100%;
           .cardImage {
-            width: 50%;
+            width: 100%;
             img {
-              width: 300px !important;
-              height: 100%;
-              object-fit: cover;
+              width: 100% !important;
+              object-fit: contain;
             }
           }
         }
